@@ -4,11 +4,11 @@ Este proyecto pretende tomar la información de un archivo .csv con datos de pru
 
 ## Arquitectura:
 
-![Untitled](Creacio%CC%81n%20de%20ETL%20con%20Python,%20PostgreSQL%20y%20visualiz%20f289a2160bfe448fb572041d291281c2/Untitled.png)
+![Untitled](https://github.com/Effyavila92/reto_ds/blob/main/img/Untitled.png)
 
 ## Visualización en Power BI
 
-![Untitled](Creacio%CC%81n%20de%20ETL%20con%20Python,%20PostgreSQL%20y%20visualiz%20f289a2160bfe448fb572041d291281c2/Untitled.gif)
+![Untitled](https://github.com/Effyavila92/reto_ds/blob/main/img/Untitled.gif)
 
 # 1. Herramientas ideales
 
@@ -54,7 +54,7 @@ source venv/Scripts/activate
 
 Se verá algo así:
 
-![Untitled](Creacio%CC%81n%20de%20ETL%20con%20Python,%20PostgreSQL%20y%20visualiz%20f289a2160bfe448fb572041d291281c2/Untitled%201.png)
+![Untitled](https://github.com/Effyavila92/reto_ds/blob/main/img/Untitled%201.png)
 
 1. Una vez creado el venv, se debe crear el repositorio.
 
@@ -70,7 +70,7 @@ git init
 
 ahora aparece en la ruta de la consola, la palabra (master) que nos indica que se ha creado esa rama de manera local donde se almacenará el proyecto.
 
-![Untitled](Creacio%CC%81n%20de%20ETL%20con%20Python,%20PostgreSQL%20y%20visualiz%20f289a2160bfe448fb572041d291281c2/Untitled%202.png)
+![Untitled](https://github.com/Effyavila92/reto_ds/blob/main/img/Untitled%202.png)
 
 A partir de la creación local del repositorio, se crean con el algunas carpetas por default en la carpeta del proyecto, entre ellos el archivo .gitignore, este permite ingresar todo aquello que no debe ser accesado desde el repo remoto en GitHub, es allí donde se debe poner el venv, para ello:
 
@@ -82,7 +82,7 @@ vim .gitignore
 
 Aparece así:
 
-![Untitled](Creacio%CC%81n%20de%20ETL%20con%20Python,%20PostgreSQL%20y%20visualiz%20f289a2160bfe448fb572041d291281c2/Untitled%203.png)
+![Untitled](https://github.com/Effyavila92/reto_ds/blob/main/img/Untitled%203.png)
 
 1. Oprimir la tecla **I = INSERT** y poner la palabra **venv/** para ingresarlo y evitar que el ambiente virtual sea visible desde el repo remoto.
 2. Dar a **esc** para dejar de editar y luego **:wq**, (guarda y cierra).
@@ -112,15 +112,15 @@ pip install jupyter
 1. Luego de instalar, abrir una nueva pestaña en la consola, ya que la actual estará corriendo el Jupyter y no permitirá hacer nada diferente a ello.
 2. Desde la consola escribir la palabra Jupyter para abrir desde Google Chrome, el programa.
 
-![Untitled](Creacio%CC%81n%20de%20ETL%20con%20Python,%20PostgreSQL%20y%20visualiz%20f289a2160bfe448fb572041d291281c2/Untitled%204.png)
+![Untitled](https://github.com/Effyavila92/reto_ds/blob/main/img/Untitled%204.png)
 
 NOTA: Desde la URL del navegador se puede identificar que se está trabajando desde el disco local.
 
-![Untitled](Creacio%CC%81n%20de%20ETL%20con%20Python,%20PostgreSQL%20y%20visualiz%20f289a2160bfe448fb572041d291281c2/Untitled%205.png)
+![Untitled](https://github.com/Effyavila92/reto_ds/blob/main/img/Untitled%205.png)
 
 1. Desde Jupyter, crear una ventana de trabajo de Python desde el botón New:
 
-![Untitled](Creacio%CC%81n%20de%20ETL%20con%20Python,%20PostgreSQL%20y%20visualiz%20f289a2160bfe448fb572041d291281c2/Untitled%206.png)
+![Untitled](https://github.com/Effyavila92/reto_ds/blob/main/img/Untitled%206.png)
 
 ## Jupyter
 
@@ -165,7 +165,7 @@ os.listdir()
 df_bd = pd.read_excel(r'BD_Gestion.xlsx', sheet_name='BD')
 ```
 
-![Untitled](Creacio%CC%81n%20de%20ETL%20con%20Python,%20PostgreSQL%20y%20visualiz%20f289a2160bfe448fb572041d291281c2/Untitled%207.png)
+![Untitled](https://github.com/Effyavila92/reto_ds/blob/main/img/Untitled%207.png)
 
 1. Identificar el contenido (campos y parte de los registros) de cada hoja usando:
 
@@ -173,7 +173,7 @@ df_bd = pd.read_excel(r'BD_Gestion.xlsx', sheet_name='BD')
 df_bd.head()
 ```
 
-![Untitled](Creacio%CC%81n%20de%20ETL%20con%20Python,%20PostgreSQL%20y%20visualiz%20f289a2160bfe448fb572041d291281c2/Untitled%208.png)
+![Untitled](https://github.com/Effyavila92/reto_ds/blob/main/img/Untitled%208.png)
 
 Una vez ejecutado lo anterior, se enviarán los datos a PostgreSQL para manejarlos con la UI DataGrip.
 
@@ -196,17 +196,17 @@ Una vez instalados:
 
 1. Crear desde DataGrip una nueva base de datos = retods,
 
-![Untitled](Creacio%CC%81n%20de%20ETL%20con%20Python,%20PostgreSQL%20y%20visualiz%20f289a2160bfe448fb572041d291281c2/Untitled%209.png)
+![Untitled](https://github.com/Effyavila92/reto_ds/blob/main/img/Untitled%209.png)
 
 1. Una vez creada, acceder a sus propiedades para tener las credenciales y parámetros de acceso:
 
 Para ello, desde la base de datos principal, dar *clic derecho > properties*
 
-![Untitled](Creacio%CC%81n%20de%20ETL%20con%20Python,%20PostgreSQL%20y%20visualiz%20f289a2160bfe448fb572041d291281c2/Untitled%2010.png)
+![Untitled](https://github.com/Effyavila92/reto_ds/blob/main/img/Untitled%2010.png)
 
 1. Se visualiza ahora:
 
-![Untitled](Creacio%CC%81n%20de%20ETL%20con%20Python,%20PostgreSQL%20y%20visualiz%20f289a2160bfe448fb572041d291281c2/Untitled%2011.png)
+![Untitled](https://github.com/Effyavila92/reto_ds/blob/main/img/Untitled%2011.png)
 
 1. Desde Jupyter, crear la conexión a la base de datos usando las credenciales identificadas en el paso anterior: 
 
@@ -279,7 +279,7 @@ ALTER TABLE nombre_Tabla
 -- La tabla es gestion y todos los nombres van en minus y los espacios con _
 ```
 
-![Untitled](Creacio%CC%81n%20de%20ETL%20con%20Python,%20PostgreSQL%20y%20visualiz%20f289a2160bfe448fb572041d291281c2/Untitled%2012.png)
+![Untitled](https://github.com/Effyavila92/reto_ds/blob/main/img/Untitled%2012.png)
 
 ## Desde Jupyter usando Python
 
@@ -299,9 +299,9 @@ df_bd.rename(
 print(df_bd.columns)
 ```
 
-![Untitled](Creacio%CC%81n%20de%20ETL%20con%20Python,%20PostgreSQL%20y%20visualiz%20f289a2160bfe448fb572041d291281c2/Untitled%2013.png)
+![Untitled](https://github.com/Effyavila92/reto_ds/blob/main/img/Untitled%2013.png)
 
-![Untitled](Creacio%CC%81n%20de%20ETL%20con%20Python,%20PostgreSQL%20y%20visualiz%20f289a2160bfe448fb572041d291281c2/Untitled%2014.png)
+![Untitled](https://github.com/Effyavila92/reto_ds/blob/main/img/Untitled%2014.png)
 
 ### Próximos pasos:
 
@@ -386,13 +386,13 @@ def add_foreing_key(table_name,fk_name,fk_column_name,parent_table,fk_column_par
 
 Se puede ejecutar y asignarlo a otra variable.
 
-![Untitled](Creacio%CC%81n%20de%20ETL%20con%20Python,%20PostgreSQL%20y%20visualiz%20f289a2160bfe448fb572041d291281c2/Untitled%2015.png)
+![Untitled](https://github.com/Effyavila92/reto_ds/blob/main/img/Untitled%2015.png)
 
-![Untitled](Creacio%CC%81n%20de%20ETL%20con%20Python,%20PostgreSQL%20y%20visualiz%20f289a2160bfe448fb572041d291281c2/Untitled%2016.png)
+![Untitled](https://github.com/Effyavila92/reto_ds/blob/main/img/Untitled%2016.png)
 
-![Untitled](Creacio%CC%81n%20de%20ETL%20con%20Python,%20PostgreSQL%20y%20visualiz%20f289a2160bfe448fb572041d291281c2/Untitled%2017.png)
+![Untitled](https://github.com/Effyavila92/reto_ds/blob/main/img/Untitled%2017.png)
 
-![Untitled](Creacio%CC%81n%20de%20ETL%20con%20Python,%20PostgreSQL%20y%20visualiz%20f289a2160bfe448fb572041d291281c2/Untitled%2018.png)
+![Untitled](https://github.com/Effyavila92/reto_ds/blob/main/img/Untitled%2018.png)
 
 ## Utilizando GitHub
 
@@ -416,4 +416,4 @@ git push origin main -f
 
 @[https://docs.github.com/es/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent](https://docs.github.com/es/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
 
-![Untitled](Creacio%CC%81n%20de%20ETL%20con%20Python,%20PostgreSQL%20y%20visualiz%20f289a2160bfe448fb572041d291281c2/Untitled%2019.png)
+![Untitled](https://github.com/Effyavila92/reto_ds/blob/main/img/Untitled%2019.png)
