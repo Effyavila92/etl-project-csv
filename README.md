@@ -415,5 +415,3 @@ git push origin main -f
 ## Creación de la SSH Key en GitBash
 
 @[https://docs.github.com/es/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent](https://docs.github.com/es/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
-
-![Untitled](https://github.com/Effyavila92/reto_ds/blob/main/img/Untitled%2019.png)
